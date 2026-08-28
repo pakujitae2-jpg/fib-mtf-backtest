@@ -1,0 +1,16 @@
+# 시세 데이터 (수십~수백 MB, GitHub 100MB 제한) — fetch_*.py 로 재수집
+*.csv
+!fib_trades.csv
+!baseline_legacy/*.csv
+!corrected/*.csv
+# 외부 저장소 클론 (external/README 참고)
+external/
+# 비밀/로컬 설정
+.env.omniroute
+.claude/settings.local.json
+# 파이썬/임시
+__pycache__/
+*.pyc
+*.log
+_*.py
+pos['tgts'][0][0]

@@ -1,0 +1,987 @@
+{
+  "run_timestamp_utc": "2026-08-28T20:13:58Z",
+  "engine": "fib_engine_c.py",
+  "synthetic_tests": "Synthetic tests: 46 PASS / 0 FAIL",
+  "engine_hash_sha256": "0f42c0d4f9fec457972144550454472e2dbd8d7e046bca7c091aed0a8be4a397",
+  "legacy_hash_sha256": "4778ba93600a7682c4e04af6cd125e23c1263179161052cd1b183418f2ffcd6f",
+  "eval": {
+    "pos": 0.3,
+    "lev": 10,
+    "seed": 10000.0
+  },
+  "versions": {
+    "V2": {
+      "config": {
+        "DCONF": 0.382,
+        "DMIN": 0.08,
+        "R4": 0.236,
+        "R_ENTRY_FIB": 0.236,
+        "R_RATIO": 0.1,
+        "ATR_MULT": 1.0,
+        "TOL": 0.003,
+        "BUF": 0.003,
+        "EXIT": "spec",
+        "RATCHET": 0.0,
+        "MFILT": "off",
+        "STRUCT": "HH_HL",
+        "SIDES": "both"
+      },
+      "data": {
+        "files": {
+          "btcusdt_1d_2017.csv": {
+            "sha256": "fa681cc48bcc48f01b10daf5d34c178fa7b46faa259c18dab9ffcce15677861e",
+            "bytes": 396535
+          },
+          "btcusdt_4h_2019.csv": {
+            "sha256": "5ed39722130da6042d4eb58a76a582e461a550369a4e61761dcf863885c1e29c",
+            "bytes": 2011388
+          },
+          "btcusdt_5m_2019_2022.csv": {
+            "sha256": "3a5e460529c3e38b4653a95cef9f369a6cb1f6d657ef443a9cf670dbeec79f59",
+            "bytes": 49303079
+          },
+          "btcusdt_5m.csv": {
+            "sha256": "5b52d1fbb75c2a730ae7da334075f4fe947c82b5f9c083ebc1ee835932e4717c",
+            "bytes": 35637462
+          }
+        },
+        "start": "2019-03-01",
+        "loader": "F.load_data('2019-03-01')",
+        "first_4h": "2019-03-01 00:00",
+        "last_4h": "2026-08-28 12:00",
+        "n_4h": 16421,
+        "n_5m": 804634,
+        "years": 7.495
+      },
+      "legacy": {
+        "n": 122,
+        "wr": 29.5082,
+        "avg_win": 79.3556,
+        "avg_loss": -16.6697,
+        "pf": 1.9928,
+        "exp": 11.6656,
+        "eq": 141577.8885,
+        "ret": 1315.7789,
+        "mdd": 56.2303,
+        "worst": 16,
+        "sharpe": 0.7448,
+        "hold_d": 4.6489,
+        "long_n": 64,
+        "short_n": 58,
+        "long_pf": 2.6366,
+        "short_pf": 1.3986,
+        "liq": 0,
+        "stop_n": 97,
+        "tp_n": 11,
+        "dv_n": 14,
+        "v_n": 6,
+        "d_n": 8,
+        "fund_pct": 0.1395,
+        "mae_avg": -0.9345,
+        "mfe_avg": 0.0,
+        "mtm_mdd_close": 67.4691,
+        "mtm_mdd_low": 67.7491
+      },
+      "corrected": {
+        "n": 150,
+        "wr": 22.0,
+        "avg_win": 80.366,
+        "avg_loss": -16.2329,
+        "pf": 1.3964,
+        "exp": 5.0188,
+        "eq": 19630.4524,
+        "ret": 96.3045,
+        "mdd": 67.8976,
+        "worst": 18,
+        "sharpe": 0.3956,
+        "hold_d": 3.2657,
+        "long_n": 77,
+        "short_n": 73,
+        "long_pf": 1.8981,
+        "short_pf": 0.9526,
+        "liq": 0,
+        "stop_n": 123,
+        "tp_n": 8,
+        "dv_n": 19,
+        "v_n": 11,
+        "d_n": 8,
+        "fund_pct": 0.0822,
+        "mae_avg": -1.4752,
+        "mfe_avg": 5.0666,
+        "mtm_mdd_close": 74.3553,
+        "mtm_mdd_low": 74.4695
+      },
+      "corrected_mtm": {
+        "mdd_close": 74.355,
+        "mdd_low": 74.47
+      },
+      "corrected_no_vpos": {
+        "n": 150,
+        "wr": 20.6667,
+        "avg_win": 85.332,
+        "avg_loss": -16.5735,
+        "pf": 1.3413,
+        "exp": 4.487,
+        "eq": 15331.7795,
+        "ret": 53.3178,
+        "mdd": 69.4744,
+        "worst": 18,
+        "sharpe": 0.3528,
+        "hold_d": 3.2687,
+        "long_n": 77,
+        "short_n": 73,
+        "long_pf": 1.8246,
+        "short_pf": 0.9132,
+        "liq": 0,
+        "stop_n": 128,
+        "tp_n": 8,
+        "dv_n": 14,
+        "v_n": 6,
+        "d_n": 8,
+        "fund_pct": 0.0822,
+        "mae_avg": -1.5018,
+        "mfe_avg": 5.0833,
+        "mtm_mdd_close": 75.796,
+        "mtm_mdd_low": 75.9038
+      },
+      "invariants": {
+        "lookahead_count": 0,
+        "invalid_event_order_count": 0
+      },
+      "diag": {
+        "partial_fine_bars": 34,
+        "entrybar_tp_deferred": 4
+      },
+      "events": {
+        "R_CONFIRM": 11028,
+        "D_ARM": 219,
+        "ORDER_CREATE": 733,
+        "SIGNAL": 733,
+        "R_REPLACED": 390,
+        "ORDER_CANCEL": 583,
+        "D_DISARM": 46,
+        "FILL": 150,
+        "R_CONFIRM_POS_FROZEN": 965,
+        "EXIT": 227,
+        "V": 23,
+        "SKIP_V": 20,
+        "R_INVALID": 146,
+        "V_POS": 5
+      },
+      "impact_sequential": [
+        {
+          "step": "1. R_INVALIDATION 5M chronology",
+          "flag_removed": "R_4H",
+          "n": 143,
+          "pf": 1.4226,
+          "ret": 114.18,
+          "mtm_mdd_close": 75.87,
+          "added": 50,
+          "removed": 29,
+          "changed": 0,
+          "delta_sum_pm": -636.44,
+          "added_pm": -120.441,
+          "removed_pm": 515.999,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "2. V/P0_BREAK 5M chronology (armed V)",
+          "flag_removed": "V_4H",
+          "n": 149,
+          "pf": 1.3529,
+          "ret": 63.76,
+          "mtm_mdd_close": 76.16,
+          "added": 12,
+          "removed": 6,
+          "changed": 6,
+          "delta_sum_pm": -93.332,
+          "added_pm": -158.622,
+          "removed_pm": -83.802,
+          "changed_pm": -18.512,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "2b. V/P0_BREAK: 보유 포지션 P0 훼손 청산",
+          "flag_removed": "NO_V_POS",
+          "n": 149,
+          "pf": 1.4087,
+          "ret": 109.68,
+          "mtm_mdd_close": 74.63,
+          "added": 0,
+          "removed": 0,
+          "changed": 5,
+          "delta_sum_pm": 79.772,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 79.772,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "3. 5M event cursor",
+          "flag_removed": "NOCURSOR",
+          "n": 149,
+          "pf": 1.4087,
+          "ret": 109.68,
+          "mtm_mdd_close": 74.63,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "delta_sum_pm": 0.0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "4. ATR confirmed-only",
+          "flag_removed": "ATR_CUR",
+          "n": 150,
+          "pf": 1.3791,
+          "ret": 81.52,
+          "mtm_mdd_close": 74.63,
+          "added": 4,
+          "removed": 3,
+          "changed": 0,
+          "delta_sum_pm": -50.583,
+          "added_pm": -25.887,
+          "removed_pm": 24.695,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "5. MAE/MFE entry~exit window",
+          "flag_removed": "MAE_4H",
+          "n": 150,
+          "pf": 1.3791,
+          "ret": 81.52,
+          "mtm_mdd_close": 74.63,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "delta_sum_pm": 0.0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "6. Funding actual timestamps",
+          "flag_removed": "FUND_4H",
+          "n": 150,
+          "pf": 1.3964,
+          "ret": 96.32,
+          "mtm_mdd_close": 74.35,
+          "added": 0,
+          "removed": 0,
+          "changed": 128,
+          "delta_sum_pm": 30.225,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 30.225,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "8. Market-close same-bar SL/TP",
+          "flag_removed": "SAMEBAR_C",
+          "n": 150,
+          "pf": 1.3964,
+          "ret": 96.32,
+          "mtm_mdd_close": 74.35,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "delta_sum_pm": 0.0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "step": "8b. Limit 진입 5분봉 Entry->TP 불리한 순서 (TP 는 다음 봉부터)",
+          "flag_removed": "ENTRYBAR_TP",
+          "n": 150,
+          "pf": 1.3964,
+          "ret": 96.3,
+          "mtm_mdd_close": 74.36,
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "delta_sum_pm": -0.025,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": -0.025,
+          "diag": {
+            "partial_fine_bars": 34,
+            "entrybar_tp_deferred": 4
+          }
+        }
+      ],
+      "impact_solo": [
+        {
+          "item": "1. R_INVALIDATION 5M chronology",
+          "flag_removed": "R_4H",
+          "n": 143,
+          "pf": 1.4226,
+          "ret": 114.18,
+          "mtm_mdd_close": 75.87,
+          "added": 50,
+          "removed": 29,
+          "changed": 0,
+          "added_pm": -120.441,
+          "removed_pm": 515.999,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "2. V/P0_BREAK 5M chronology (armed V)",
+          "flag_removed": "V_4H",
+          "n": 123,
+          "pf": 2.0072,
+          "ret": 1375.14,
+          "mtm_mdd_close": 67.47,
+          "added": 2,
+          "removed": 1,
+          "changed": 7,
+          "added_pm": -33.707,
+          "removed_pm": -16.761,
+          "changed_pm": 17.651,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "2b. V/P0_BREAK: 보유 포지션 P0 훼손 청산",
+          "flag_removed": "NO_V_POS",
+          "n": 122,
+          "pf": 2.006,
+          "ret": 1358.09,
+          "mtm_mdd_close": 66.5,
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 9.457,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "3. 5M event cursor",
+          "flag_removed": "NOCURSOR",
+          "n": 122,
+          "pf": 1.9928,
+          "ret": 1315.78,
+          "mtm_mdd_close": 67.47,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "4. ATR confirmed-only",
+          "flag_removed": "ATR_CUR",
+          "n": 122,
+          "pf": 2.097,
+          "ret": 1811.87,
+          "mtm_mdd_close": 67.47,
+          "added": 2,
+          "removed": 2,
+          "changed": 0,
+          "added_pm": 56.793,
+          "removed_pm": -44.168,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "5. MAE/MFE entry~exit window",
+          "flag_removed": "MAE_4H",
+          "n": 122,
+          "pf": 1.9928,
+          "ret": 1315.78,
+          "mtm_mdd_close": 67.47,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "6. Funding actual timestamps",
+          "flag_removed": "FUND_4H",
+          "n": 122,
+          "pf": 2.0198,
+          "ret": 1433.01,
+          "mtm_mdd_close": 67.06,
+          "added": 0,
+          "removed": 0,
+          "changed": 103,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 32.75,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "8. Market-close same-bar SL/TP",
+          "flag_removed": "SAMEBAR_C",
+          "n": 122,
+          "pf": 1.9928,
+          "ret": 1315.78,
+          "mtm_mdd_close": 67.47,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34
+          }
+        },
+        {
+          "item": "8b. Limit 진입 5분봉 Entry->TP 불리한 순서 (TP 는 다음 봉부터)",
+          "flag_removed": "ENTRYBAR_TP",
+          "n": 122,
+          "pf": 1.9928,
+          "ret": 1315.78,
+          "mtm_mdd_close": 67.47,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 34,
+            "entrybar_tp_deferred": 3
+          }
+        }
+      ],
+      "legacy_equivalence": {
+        "removed": 0,
+        "added": 0,
+        "changed": 0
+      }
+    },
+    "V3": {
+      "config": {
+        "DCONF": 0.382,
+        "DMIN": 0.08,
+        "R4": 0.236,
+        "R_ENTRY_FIB": 0.236,
+        "R_RATIO": 0.1,
+        "ATR_MULT": 1.0,
+        "TOL": 0.003,
+        "BUF": 0.003,
+        "EXIT": "halfR2spec",
+        "RATCHET": 0.0,
+        "MFILT": "off",
+        "STRUCT": "HH_HL",
+        "SIDES": "both",
+        "FILL": "A",
+        "PEN": 0.0,
+        "TGT_POLICY": "retro"
+      },
+      "data": {
+        "files": {
+          "btcusdt_1d_2017.csv": {
+            "sha256": "fa681cc48bcc48f01b10daf5d34c178fa7b46faa259c18dab9ffcce15677861e",
+            "bytes": 396535
+          },
+          "btcusdt_fut_4h.csv": {
+            "sha256": "5c2550f2c3b19cfad6180ed69339cd66d2f6fb62958c6afbfbfd68a73001acbf",
+            "bytes": 1400713
+          },
+          "btcusdt_fut_5m.csv": {
+            "sha256": "c86ab2b6cfaf8cc836263f8bed975b99fbad1ff100f0ac84edfae5b7537581ed",
+            "bytes": 65963014
+          },
+          "btcusdt_funding.csv": {
+            "sha256": "bd5beda87d8abd242257b2a52298b2d3eb1d73ce2da74cb032f12893ea2913bf",
+            "bytes": 329377
+          }
+        },
+        "start": "2019-12-15",
+        "loader": "F.Data(d_spot, h4_fut, f_fut, '2019-12-15', funding=fund)  # 3차 보고서 구성 C",
+        "first_4h": "2019-12-15 00:00",
+        "last_4h": "2026-08-28 12:00",
+        "n_4h": 14692,
+        "n_5m": 733248,
+        "years": 6.704
+      },
+      "legacy": {
+        "n": 115,
+        "wr": 46.9565,
+        "avg_win": 35.5891,
+        "avg_loss": -18.5045,
+        "pf": 1.7026,
+        "exp": 6.896,
+        "eq": 56476.2881,
+        "ret": 464.7629,
+        "mdd": 36.0266,
+        "worst": 7,
+        "sharpe": 0.762,
+        "hold_d": 3.3435,
+        "long_n": 64,
+        "short_n": 51,
+        "long_pf": 2.6291,
+        "short_pf": 1.054,
+        "liq": 0,
+        "stop_n": 98,
+        "tp_n": 9,
+        "dv_n": 8,
+        "v_n": 6,
+        "d_n": 2,
+        "fund_pct": 0.0754,
+        "mae_avg": -0.8627,
+        "mfe_avg": 0.0,
+        "mtm_mdd_close": 42.136,
+        "mtm_mdd_low": 43.1068
+      },
+      "corrected": {
+        "n": 141,
+        "wr": 34.7518,
+        "avg_win": 36.5894,
+        "avg_loss": -17.6672,
+        "pf": 1.1031,
+        "exp": 1.1879,
+        "eq": 8448.7076,
+        "ret": -15.5129,
+        "mdd": 74.1108,
+        "worst": 10,
+        "sharpe": 0.1566,
+        "hold_d": 2.6186,
+        "long_n": 75,
+        "short_n": 66,
+        "long_pf": 1.742,
+        "short_pf": 0.6572,
+        "liq": 0,
+        "stop_n": 122,
+        "tp_n": 6,
+        "dv_n": 13,
+        "v_n": 11,
+        "d_n": 2,
+        "fund_pct": 0.0619,
+        "mae_avg": -1.3074,
+        "mfe_avg": 4.7816,
+        "mtm_mdd_close": 78.3319,
+        "mtm_mdd_low": 78.4379
+      },
+      "corrected_mtm": {
+        "mdd_close": 78.332,
+        "mdd_low": 78.438
+      },
+      "corrected_no_vpos": {
+        "n": 141,
+        "wr": 34.0426,
+        "avg_win": 37.7806,
+        "avg_loss": -17.994,
+        "pf": 1.0837,
+        "exp": 0.9931,
+        "eq": 7715.3249,
+        "ret": -22.8468,
+        "mdd": 75.3168,
+        "worst": 10,
+        "sharpe": 0.1302,
+        "hold_d": 2.6443,
+        "long_n": 75,
+        "short_n": 66,
+        "long_pf": 1.7109,
+        "short_pf": 0.6376,
+        "liq": 0,
+        "stop_n": 126,
+        "tp_n": 6,
+        "dv_n": 9,
+        "v_n": 7,
+        "d_n": 2,
+        "fund_pct": 0.0626,
+        "mae_avg": -1.3352,
+        "mfe_avg": 4.8208,
+        "mtm_mdd_close": 79.3413,
+        "mtm_mdd_low": 79.4423
+      },
+      "invariants": {
+        "lookahead_count": 0,
+        "invalid_event_order_count": 0
+      },
+      "diag": {
+        "entrybar_tp_deferred": 1,
+        "partial_fine_bars": 1
+      },
+      "events": {
+        "ORDER_CREATE": 586,
+        "SIGNAL": 585,
+        "R_CONFIRM": 9832,
+        "R_REPLACED": 313,
+        "ORDER_CANCEL": 445,
+        "FILL": 141,
+        "EXIT": 245,
+        "D_ARM": 189,
+        "R_CONFIRM_POS_FROZEN": 718,
+        "R_INVALID": 98,
+        "D_DISARM": 28,
+        "V": 21,
+        "SKIP_V": 17,
+        "V_POS": 4
+      },
+      "impact_sequential": [
+        {
+          "step": "1. R_INVALIDATION 5M chronology",
+          "flag_removed": "R_4H",
+          "n": 136,
+          "pf": 1.0716,
+          "ret": -27.43,
+          "mtm_mdd_close": 77.42,
+          "added": 47,
+          "removed": 26,
+          "changed": 0,
+          "delta_sum_pm": -677.221,
+          "added_pm": -587.34,
+          "removed_pm": 89.881,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "2. V/P0_BREAK 5M chronology (armed V)",
+          "flag_removed": "V_4H",
+          "n": 141,
+          "pf": 1.0309,
+          "ret": -40.1,
+          "mtm_mdd_close": 80.29,
+          "added": 9,
+          "removed": 4,
+          "changed": 6,
+          "delta_sum_pm": -63.311,
+          "added_pm": -106.55,
+          "removed_pm": -53.429,
+          "changed_pm": -10.19,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "2b. V/P0_BREAK: 보유 포지션 P0 훼손 청산",
+          "flag_removed": "NO_V_POS",
+          "n": 141,
+          "pf": 1.0484,
+          "ret": -34.4,
+          "mtm_mdd_close": 79.33,
+          "added": 0,
+          "removed": 0,
+          "changed": 4,
+          "delta_sum_pm": 27.471,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 27.471,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "3. 5M event cursor",
+          "flag_removed": "NOCURSOR",
+          "n": 141,
+          "pf": 1.0484,
+          "ret": -34.4,
+          "mtm_mdd_close": 79.33,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "delta_sum_pm": 0.0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "4. ATR confirmed-only",
+          "flag_removed": "ATR_CUR",
+          "n": 141,
+          "pf": 1.0839,
+          "ret": -22.58,
+          "mtm_mdd_close": 78.52,
+          "added": 3,
+          "removed": 3,
+          "changed": 0,
+          "delta_sum_pm": 56.532,
+          "added_pm": 56.944,
+          "removed_pm": 0.412,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "5. MAE/MFE entry~exit window",
+          "flag_removed": "MAE_4H",
+          "n": 141,
+          "pf": 1.0839,
+          "ret": -22.58,
+          "mtm_mdd_close": 78.52,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "delta_sum_pm": 0.0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "6. Funding actual timestamps",
+          "flag_removed": "FUND_4H",
+          "n": 141,
+          "pf": 1.0857,
+          "ret": -21.9,
+          "mtm_mdd_close": 78.33,
+          "added": 0,
+          "removed": 0,
+          "changed": 34,
+          "delta_sum_pm": 2.776,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 2.776,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "8. Market-close same-bar SL/TP",
+          "flag_removed": "SAMEBAR_C",
+          "n": 141,
+          "pf": 1.0857,
+          "ret": -21.9,
+          "mtm_mdd_close": 78.33,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "delta_sum_pm": 0.0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "step": "8b. Limit 진입 5분봉 Entry->TP 불리한 순서 (TP 는 다음 봉부터)",
+          "flag_removed": "ENTRYBAR_TP",
+          "n": 141,
+          "pf": 1.1031,
+          "ret": -15.51,
+          "mtm_mdd_close": 78.33,
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "delta_sum_pm": 28.213,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 28.213,
+          "diag": {
+            "entrybar_tp_deferred": 1,
+            "partial_fine_bars": 1
+          }
+        }
+      ],
+      "impact_solo": [
+        {
+          "item": "1. R_INVALIDATION 5M chronology",
+          "flag_removed": "R_4H",
+          "n": 136,
+          "pf": 1.0716,
+          "ret": -27.43,
+          "mtm_mdd_close": 77.42,
+          "added": 47,
+          "removed": 26,
+          "changed": 0,
+          "added_pm": -587.34,
+          "removed_pm": 89.881,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "2. V/P0_BREAK 5M chronology (armed V)",
+          "flag_removed": "V_4H",
+          "n": 116,
+          "pf": 1.6312,
+          "ret": 376.48,
+          "mtm_mdd_close": 45.71,
+          "added": 2,
+          "removed": 1,
+          "changed": 6,
+          "added_pm": -34.17,
+          "removed_pm": 14.649,
+          "changed_pm": -10.19,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "2b. V/P0_BREAK: 보유 포지션 P0 훼손 청산",
+          "flag_removed": "NO_V_POS",
+          "n": 115,
+          "pf": 1.6751,
+          "ret": 418.02,
+          "mtm_mdd_close": 44.92,
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": -29.946,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "3. 5M event cursor",
+          "flag_removed": "NOCURSOR",
+          "n": 115,
+          "pf": 1.7026,
+          "ret": 464.76,
+          "mtm_mdd_close": 42.14,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "4. ATR confirmed-only",
+          "flag_removed": "ATR_CUR",
+          "n": 115,
+          "pf": 1.7513,
+          "ret": 543.33,
+          "mtm_mdd_close": 40.12,
+          "added": 2,
+          "removed": 2,
+          "changed": 0,
+          "added_pm": 67.924,
+          "removed_pm": 22.699,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "5. MAE/MFE entry~exit window",
+          "flag_removed": "MAE_4H",
+          "n": 115,
+          "pf": 1.7026,
+          "ret": 464.76,
+          "mtm_mdd_close": 42.14,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "6. Funding actual timestamps",
+          "flag_removed": "FUND_4H",
+          "n": 115,
+          "pf": 1.7035,
+          "ret": 466.53,
+          "mtm_mdd_close": 42.12,
+          "added": 0,
+          "removed": 0,
+          "changed": 28,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 1.066,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "8. Market-close same-bar SL/TP",
+          "flag_removed": "SAMEBAR_C",
+          "n": 115,
+          "pf": 1.7026,
+          "ret": 464.76,
+          "mtm_mdd_close": 42.14,
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 0,
+          "diag": {
+            "partial_fine_bars": 1
+          }
+        },
+        {
+          "item": "8b. Limit 진입 5분봉 Entry->TP 불리한 순서 (TP 는 다음 봉부터)",
+          "flag_removed": "ENTRYBAR_TP",
+          "n": 115,
+          "pf": 1.7276,
+          "ret": 510.95,
+          "mtm_mdd_close": 42.14,
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "added_pm": 0,
+          "removed_pm": 0,
+          "changed_pm": 28.213,
+          "diag": {
+            "entrybar_tp_deferred": 1,
+            "partial_fine_bars": 1
+          }
+        }
+      ],
+      "legacy_equivalence": {
+        "removed": 0,
+        "added": 0,
+        "changed": 0
+      }
+    }
+  }
+}
