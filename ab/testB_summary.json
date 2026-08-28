@@ -1,0 +1,1748 @@
+{
+  "seed": 20260829,
+  "n_r1": 20,
+  "window_days": 5,
+  "horizon_days": 60,
+  "bootstrap_iterations": 5000,
+  "n_candidates": 101,
+  "subset_check": {
+    "match": 81,
+    "total": 82,
+    "exceptions": [
+      {
+        "signal_id": "L-2021-01-03 15:59-26",
+        "entry_time": "2021-01-03 16:45",
+        "entry": 33072.93881028,
+        "R_t": 4396,
+        "kind": "KEY_MISSING",
+        "explained_by_slot": true,
+        "shadow_same_arm": [
+          [
+            "0.236-31",
+            "2020-12-31 12:55",
+            28480.64
+          ]
+        ]
+      }
+    ]
+  },
+  "median_stop_pct": 1.4029814786372,
+  "compare": {
+    "R1": {
+      "label": "B-R1 시간매칭 무작위",
+      "S": {
+        "n": 101,
+        "censored": 7.920792,
+        "stopped": 92.079208,
+        "reach1R": 52.475248,
+        "reach2R": 35.643564,
+        "reach3R": 29.70297,
+        "reach5R": 18.811881,
+        "median_maxR": 1.032634,
+        "stop_median": 1.402981,
+        "stop_mean": 1.529305,
+        "small": false
+      },
+      "B": {
+        "n": 2020,
+        "censored": 9.70297,
+        "stopped": 90.29703,
+        "reach1R": 54.752475,
+        "reach2R": 38.861386,
+        "reach3R": 30.49505,
+        "reach5R": 21.237624,
+        "median_maxR": 1.228636,
+        "stop_median": 1.402981,
+        "stop_mean": 1.529305,
+        "small": false
+      },
+      "gap2R": -3.217822,
+      "boot_year": {
+        "gap": -3.217822,
+        "ci_low": -13.75,
+        "ci_high": 3.613861,
+        "blocks": 8,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "boot_month": {
+        "gap": -3.217822,
+        "ci_low": -11.6,
+        "ci_high": 5.053763,
+        "blocks": 56,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "tail": {
+        "S": {
+          "n": 96,
+          "censored": 3.125,
+          "stopped": 96.875,
+          "reach1R": 50.0,
+          "reach2R": 32.291667,
+          "reach3R": 26.041667,
+          "reach5R": 14.583333,
+          "median_maxR": 1.00256,
+          "stop_median": 1.421387,
+          "stop_mean": 1.534535,
+          "small": false
+        },
+        "B": {
+          "n": 1919,
+          "censored": 5.106826,
+          "stopped": 94.893174,
+          "reach1R": 52.371027,
+          "reach2R": 35.643564,
+          "reach3R": 26.836894,
+          "reach5R": 17.092236,
+          "median_maxR": 1.080594,
+          "stop_median": 1.402981,
+          "stop_mean": 1.531533,
+          "small": false
+        },
+        "gap2R": -3.351898
+      },
+      "periods": {
+        "2019-2022": {
+          "S": {
+            "n": 66,
+            "censored": 6.060606,
+            "stopped": 93.939394,
+            "reach1R": 48.484848,
+            "reach2R": 31.818182,
+            "reach3R": 27.272727,
+            "reach5R": 18.181818,
+            "median_maxR": 0.934799,
+            "stop_median": 1.468706,
+            "stop_mean": 1.598578,
+            "small": false
+          },
+          "B": {
+            "n": 1320,
+            "censored": 6.363636,
+            "stopped": 93.636364,
+            "reach1R": 52.878788,
+            "reach2R": 35.984848,
+            "reach3R": 27.5,
+            "reach5R": 18.030303,
+            "median_maxR": 1.095955,
+            "stop_median": 1.468706,
+            "stop_mean": 1.598578,
+            "small": false
+          },
+          "gap2R": -4.166667
+        },
+        "2023-2026": {
+          "S": {
+            "n": 35,
+            "censored": 11.428571,
+            "stopped": 88.571429,
+            "reach1R": 60.0,
+            "reach2R": 42.857143,
+            "reach3R": 34.285714,
+            "reach5R": 20.0,
+            "median_maxR": 1.408438,
+            "stop_median": 1.329792,
+            "stop_mean": 1.398677,
+            "small": false
+          },
+          "B": {
+            "n": 700,
+            "censored": 16.0,
+            "stopped": 84.0,
+            "reach1R": 58.285714,
+            "reach2R": 44.285714,
+            "reach3R": 36.142857,
+            "reach5R": 27.285714,
+            "median_maxR": 1.520759,
+            "stop_median": 1.329792,
+            "stop_mean": 1.398677,
+            "small": false
+          },
+          "gap2R": -1.428571
+        }
+      },
+      "yearly": {
+        "2019": {
+          "nS": 10,
+          "S": 30.0,
+          "nB": 200,
+          "B": 40.5
+        },
+        "2020": {
+          "nS": 21,
+          "S": 33.333333,
+          "nB": 420,
+          "B": 40.714286
+        },
+        "2021": {
+          "nS": 27,
+          "S": 37.037037,
+          "nB": 540,
+          "B": 32.962963
+        },
+        "2022": {
+          "nS": 8,
+          "S": 12.5,
+          "nB": 160,
+          "B": 28.125
+        },
+        "2023": {
+          "nS": 13,
+          "S": 61.538462,
+          "nB": 260,
+          "B": 46.923077
+        },
+        "2024": {
+          "nS": 13,
+          "S": 46.153846,
+          "nB": 260,
+          "B": 41.923077
+        },
+        "2025": {
+          "nS": 6,
+          "S": 16.666667,
+          "nB": 120,
+          "B": 36.666667
+        },
+        "2026": {
+          "nS": 3,
+          "S": 0.0,
+          "nB": 60,
+          "B": 58.333333
+        }
+      },
+      "gap1R": -2.277228,
+      "gap3R": -0.792079
+    },
+    "R2a": {
+      "label": "B-R2a ARMED-only (구조 손절 P0)",
+      "S": {
+        "n": 101,
+        "censored": 7.920792,
+        "stopped": 92.079208,
+        "reach1R": 52.475248,
+        "reach2R": 35.643564,
+        "reach3R": 29.70297,
+        "reach5R": 18.811881,
+        "median_maxR": 1.032634,
+        "stop_median": 1.402981,
+        "stop_mean": 1.529305,
+        "small": false
+      },
+      "B": {
+        "n": 115,
+        "censored": 33.043478,
+        "stopped": 66.956522,
+        "reach1R": 54.782609,
+        "reach2R": 33.913043,
+        "reach3R": 25.217391,
+        "reach5R": 15.652174,
+        "median_maxR": 1.171587,
+        "stop_median": 8.363224,
+        "stop_mean": 8.972214,
+        "small": false
+      },
+      "gap2R": 1.730521,
+      "boot_year": {
+        "gap": 1.730521,
+        "ci_low": -13.694952,
+        "ci_high": 15.868455,
+        "blocks": 8,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "boot_month": {
+        "gap": 1.730521,
+        "ci_low": -10.651154,
+        "ci_high": 13.988095,
+        "blocks": 59,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "tail": {
+        "S": {
+          "n": 96,
+          "censored": 3.125,
+          "stopped": 96.875,
+          "reach1R": 50.0,
+          "reach2R": 32.291667,
+          "reach3R": 26.041667,
+          "reach5R": 14.583333,
+          "median_maxR": 1.00256,
+          "stop_median": 1.421387,
+          "stop_mean": 1.534535,
+          "small": false
+        },
+        "B": {
+          "n": 109,
+          "censored": 29.357798,
+          "stopped": 70.642202,
+          "reach1R": 52.293578,
+          "reach2R": 30.275229,
+          "reach3R": 21.100917,
+          "reach5R": 11.009174,
+          "median_maxR": 1.021579,
+          "stop_median": 8.425112,
+          "stop_mean": 9.154588,
+          "small": false
+        },
+        "gap2R": 2.016437
+      },
+      "periods": {
+        "2019-2022": {
+          "S": {
+            "n": 66,
+            "censored": 6.060606,
+            "stopped": 93.939394,
+            "reach1R": 48.484848,
+            "reach2R": 31.818182,
+            "reach3R": 27.272727,
+            "reach5R": 18.181818,
+            "median_maxR": 0.934799,
+            "stop_median": 1.468706,
+            "stop_mean": 1.598578,
+            "small": false
+          },
+          "B": {
+            "n": 78,
+            "censored": 29.487179,
+            "stopped": 70.512821,
+            "reach1R": 53.846154,
+            "reach2R": 38.461538,
+            "reach3R": 28.205128,
+            "reach5R": 17.948718,
+            "median_maxR": 1.201539,
+            "stop_median": 7.880712,
+            "stop_mean": 8.988766,
+            "small": false
+          },
+          "gap2R": -6.643357
+        },
+        "2023-2026": {
+          "S": {
+            "n": 35,
+            "censored": 11.428571,
+            "stopped": 88.571429,
+            "reach1R": 60.0,
+            "reach2R": 42.857143,
+            "reach3R": 34.285714,
+            "reach5R": 20.0,
+            "median_maxR": 1.408438,
+            "stop_median": 1.329792,
+            "stop_mean": 1.398677,
+            "small": false
+          },
+          "B": {
+            "n": 37,
+            "censored": 40.540541,
+            "stopped": 59.459459,
+            "reach1R": 56.756757,
+            "reach2R": 24.324324,
+            "reach3R": 18.918919,
+            "reach5R": 10.810811,
+            "median_maxR": 1.021579,
+            "stop_median": 8.442997,
+            "stop_mean": 8.937321,
+            "small": false
+          },
+          "gap2R": 18.532819
+        }
+      },
+      "yearly": {
+        "2019": {
+          "nS": 10,
+          "S": 30.0,
+          "nB": 14,
+          "B": 42.857143
+        },
+        "2020": {
+          "nS": 21,
+          "S": 33.333333,
+          "nB": 24,
+          "B": 58.333333
+        },
+        "2021": {
+          "nS": 27,
+          "S": 37.037037,
+          "nB": 30,
+          "B": 23.333333
+        },
+        "2022": {
+          "nS": 8,
+          "S": 12.5,
+          "nB": 10,
+          "B": 30.0
+        },
+        "2023": {
+          "nS": 13,
+          "S": 61.538462,
+          "nB": 14,
+          "B": 35.714286
+        },
+        "2024": {
+          "nS": 13,
+          "S": 46.153846,
+          "nB": 13,
+          "B": 23.076923
+        },
+        "2025": {
+          "nS": 6,
+          "S": 16.666667,
+          "nB": 6,
+          "B": 16.666667
+        },
+        "2026": {
+          "nS": 3,
+          "S": 0.0,
+          "nB": 4,
+          "B": 0.0
+        }
+      },
+      "gap1R": -2.307361,
+      "gap3R": 4.485579
+    },
+    "R2b": {
+      "label": "B-R2b ARMED-only (손절폭 고정)",
+      "S": {
+        "n": 101,
+        "censored": 7.920792,
+        "stopped": 92.079208,
+        "reach1R": 52.475248,
+        "reach2R": 35.643564,
+        "reach3R": 29.70297,
+        "reach5R": 18.811881,
+        "median_maxR": 1.032634,
+        "stop_median": 1.402981,
+        "stop_mean": 1.529305,
+        "small": false
+      },
+      "B": {
+        "n": 119,
+        "censored": 9.243697,
+        "stopped": 90.756303,
+        "reach1R": 53.781513,
+        "reach2R": 38.655462,
+        "reach3R": 26.05042,
+        "reach5R": 17.647059,
+        "median_maxR": 1.206762,
+        "stop_median": 1.402981,
+        "stop_mean": 1.402981,
+        "small": false
+      },
+      "gap2R": -3.011898,
+      "boot_year": {
+        "gap": -3.011898,
+        "ci_low": -13.18586,
+        "ci_high": 4.166667,
+        "blocks": 8,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "boot_month": {
+        "gap": -3.011898,
+        "ci_low": -13.641933,
+        "ci_high": 7.728614,
+        "blocks": 59,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "tail": {
+        "S": {
+          "n": 96,
+          "censored": 3.125,
+          "stopped": 96.875,
+          "reach1R": 50.0,
+          "reach2R": 32.291667,
+          "reach3R": 26.041667,
+          "reach5R": 14.583333,
+          "median_maxR": 1.00256,
+          "stop_median": 1.421387,
+          "stop_mean": 1.534535,
+          "small": false
+        },
+        "B": {
+          "n": 113,
+          "censored": 4.424779,
+          "stopped": 95.575221,
+          "reach1R": 51.327434,
+          "reach2R": 35.39823,
+          "reach3R": 22.123894,
+          "reach5R": 13.274336,
+          "median_maxR": 1.071484,
+          "stop_median": 1.402981,
+          "stop_mean": 1.402981,
+          "small": false
+        },
+        "gap2R": -3.106563
+      },
+      "periods": {
+        "2019-2022": {
+          "S": {
+            "n": 66,
+            "censored": 6.060606,
+            "stopped": 93.939394,
+            "reach1R": 48.484848,
+            "reach2R": 31.818182,
+            "reach3R": 27.272727,
+            "reach5R": 18.181818,
+            "median_maxR": 0.934799,
+            "stop_median": 1.468706,
+            "stop_mean": 1.598578,
+            "small": false
+          },
+          "B": {
+            "n": 80,
+            "censored": 7.5,
+            "stopped": 92.5,
+            "reach1R": 53.75,
+            "reach2R": 36.25,
+            "reach3R": 25.0,
+            "reach5R": 18.75,
+            "median_maxR": 1.119635,
+            "stop_median": 1.402981,
+            "stop_mean": 1.402981,
+            "small": false
+          },
+          "gap2R": -4.431818
+        },
+        "2023-2026": {
+          "S": {
+            "n": 35,
+            "censored": 11.428571,
+            "stopped": 88.571429,
+            "reach1R": 60.0,
+            "reach2R": 42.857143,
+            "reach3R": 34.285714,
+            "reach5R": 20.0,
+            "median_maxR": 1.408438,
+            "stop_median": 1.329792,
+            "stop_mean": 1.398677,
+            "small": false
+          },
+          "B": {
+            "n": 39,
+            "censored": 12.820513,
+            "stopped": 87.179487,
+            "reach1R": 53.846154,
+            "reach2R": 43.589744,
+            "reach3R": 28.205128,
+            "reach5R": 15.384615,
+            "median_maxR": 1.487877,
+            "stop_median": 1.402981,
+            "stop_mean": 1.402981,
+            "small": false
+          },
+          "gap2R": -0.732601
+        }
+      },
+      "yearly": {
+        "2019": {
+          "nS": 10,
+          "S": 30.0,
+          "nB": 14,
+          "B": 42.857143
+        },
+        "2020": {
+          "nS": 21,
+          "S": 33.333333,
+          "nB": 24,
+          "B": 41.666667
+        },
+        "2021": {
+          "nS": 27,
+          "S": 37.037037,
+          "nB": 32,
+          "B": 31.25
+        },
+        "2022": {
+          "nS": 8,
+          "S": 12.5,
+          "nB": 10,
+          "B": 30.0
+        },
+        "2023": {
+          "nS": 13,
+          "S": 61.538462,
+          "nB": 14,
+          "B": 50.0
+        },
+        "2024": {
+          "nS": 13,
+          "S": 46.153846,
+          "nB": 15,
+          "B": 40.0
+        },
+        "2025": {
+          "nS": 6,
+          "S": 16.666667,
+          "nB": 6,
+          "B": 50.0
+        },
+        "2026": {
+          "nS": 3,
+          "S": 0.0,
+          "nB": 4,
+          "B": 25.0
+        }
+      },
+      "gap1R": -1.306265,
+      "gap3R": 3.65255
+    },
+    "R3_random": {
+      "label": "B-R3 0.236 vs 무작위 레벨",
+      "S": {
+        "n": 101,
+        "censored": 7.920792,
+        "stopped": 92.079208,
+        "reach1R": 52.475248,
+        "reach2R": 35.643564,
+        "reach3R": 29.70297,
+        "reach5R": 18.811881,
+        "median_maxR": 1.032634,
+        "stop_median": 1.402981,
+        "stop_mean": 1.529305,
+        "small": false
+      },
+      "B": {
+        "n": 519,
+        "censored": 12.138728,
+        "stopped": 87.861272,
+        "reach1R": 50.674374,
+        "reach2R": 38.535645,
+        "reach3R": 31.021195,
+        "reach5R": 22.928709,
+        "median_maxR": 1.024933,
+        "stop_median": 1.809672,
+        "stop_mean": 2.086273,
+        "small": false
+      },
+      "gap2R": -2.892081,
+      "boot_year": {
+        "gap": -2.892081,
+        "ci_low": -8.628049,
+        "ci_high": 3.514466,
+        "blocks": 8,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "boot_month": {
+        "gap": -2.892081,
+        "ci_low": -8.906883,
+        "ci_high": 3.349398,
+        "blocks": 59,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "tail": {
+        "S": {
+          "n": 96,
+          "censored": 3.125,
+          "stopped": 96.875,
+          "reach1R": 50.0,
+          "reach2R": 32.291667,
+          "reach3R": 26.041667,
+          "reach5R": 14.583333,
+          "median_maxR": 1.00256,
+          "stop_median": 1.421387,
+          "stop_mean": 1.534535,
+          "small": false
+        },
+        "B": {
+          "n": 493,
+          "censored": 7.505071,
+          "stopped": 92.494929,
+          "reach1R": 48.073022,
+          "reach2R": 35.294118,
+          "reach3R": 27.383367,
+          "reach5R": 18.864097,
+          "median_maxR": 0.901706,
+          "stop_median": 1.819428,
+          "stop_mean": 2.094424,
+          "small": false
+        },
+        "gap2R": -3.002451
+      },
+      "periods": {
+        "2019-2022": {
+          "S": {
+            "n": 66,
+            "censored": 6.060606,
+            "stopped": 93.939394,
+            "reach1R": 48.484848,
+            "reach2R": 31.818182,
+            "reach3R": 27.272727,
+            "reach5R": 18.181818,
+            "median_maxR": 0.934799,
+            "stop_median": 1.468706,
+            "stop_mean": 1.598578,
+            "small": false
+          },
+          "B": {
+            "n": 345,
+            "censored": 9.565217,
+            "stopped": 90.434783,
+            "reach1R": 47.536232,
+            "reach2R": 35.652174,
+            "reach3R": 28.695652,
+            "reach5R": 21.73913,
+            "median_maxR": 0.865171,
+            "stop_median": 1.926606,
+            "stop_mean": 2.222817,
+            "small": false
+          },
+          "gap2R": -3.833992
+        },
+        "2023-2026": {
+          "S": {
+            "n": 35,
+            "censored": 11.428571,
+            "stopped": 88.571429,
+            "reach1R": 60.0,
+            "reach2R": 42.857143,
+            "reach3R": 34.285714,
+            "reach5R": 20.0,
+            "median_maxR": 1.408438,
+            "stop_median": 1.329792,
+            "stop_mean": 1.398677,
+            "small": false
+          },
+          "B": {
+            "n": 174,
+            "censored": 17.241379,
+            "stopped": 82.758621,
+            "reach1R": 56.896552,
+            "reach2R": 44.252874,
+            "reach3R": 35.632184,
+            "reach5R": 25.287356,
+            "median_maxR": 1.49268,
+            "stop_median": 1.625503,
+            "stop_mean": 1.815538,
+            "small": false
+          },
+          "gap2R": -1.395731
+        }
+      },
+      "yearly": {
+        "2019": {
+          "nS": 10,
+          "S": 30.0,
+          "nB": 55,
+          "B": 23.636364
+        },
+        "2020": {
+          "nS": 21,
+          "S": 33.333333,
+          "nB": 107,
+          "B": 46.728972
+        },
+        "2021": {
+          "nS": 27,
+          "S": 37.037037,
+          "nB": 136,
+          "B": 39.705882
+        },
+        "2022": {
+          "nS": 8,
+          "S": 12.5,
+          "nB": 47,
+          "B": 12.765957
+        },
+        "2023": {
+          "nS": 13,
+          "S": 61.538462,
+          "nB": 64,
+          "B": 53.125
+        },
+        "2024": {
+          "nS": 13,
+          "S": 46.153846,
+          "nB": 65,
+          "B": 49.230769
+        },
+        "2025": {
+          "nS": 6,
+          "S": 16.666667,
+          "nB": 30,
+          "B": 36.666667
+        },
+        "2026": {
+          "nS": 3,
+          "S": 0.0,
+          "nB": 15,
+          "B": 0.0
+        }
+      },
+      "gap1R": 1.800874,
+      "gap3R": -1.318224
+    },
+    "R1_nopartial": {
+      "label": "B-R1 (5분봉 결손 후보 제외)",
+      "S": {
+        "n": 99,
+        "censored": 8.080808,
+        "stopped": 91.919192,
+        "reach1R": 52.525253,
+        "reach2R": 35.353535,
+        "reach3R": 29.292929,
+        "reach5R": 18.181818,
+        "median_maxR": 1.032634,
+        "stop_median": 1.39713,
+        "stop_mean": 1.520216,
+        "small": false
+      },
+      "B": {
+        "n": 1980,
+        "censored": 9.79798,
+        "stopped": 90.20202,
+        "reach1R": 54.949495,
+        "reach2R": 39.141414,
+        "reach3R": 30.707071,
+        "reach5R": 21.262626,
+        "median_maxR": 1.237889,
+        "stop_median": 1.39713,
+        "stop_mean": 1.520216,
+        "small": false
+      },
+      "gap2R": -3.787879,
+      "boot_year": {
+        "gap": -3.787879,
+        "ci_low": -13.916667,
+        "ci_high": 3.0,
+        "blocks": 8,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "boot_month": {
+        "gap": -3.787879,
+        "ci_low": -11.709402,
+        "ci_high": 4.583333,
+        "blocks": 55,
+        "skipped": 0,
+        "iters": 5000
+      },
+      "tail": {
+        "S": {
+          "n": 94,
+          "censored": 3.191489,
+          "stopped": 96.808511,
+          "reach1R": 50.0,
+          "reach2R": 31.914894,
+          "reach3R": 25.531915,
+          "reach5R": 13.829787,
+          "median_maxR": 1.00256,
+          "stop_median": 1.402981,
+          "stop_mean": 1.525073,
+          "small": false
+        },
+        "B": {
+          "n": 1881,
+          "censored": 5.209995,
+          "stopped": 94.790005,
+          "reach1R": 52.578416,
+          "reach2R": 35.938331,
+          "reach3R": 27.060074,
+          "reach5R": 17.118554,
+          "median_maxR": 1.0881,
+          "stop_median": 1.39713,
+          "stop_mean": 1.521711,
+          "small": false
+        },
+        "gap2R": -4.023437
+      },
+      "periods": {
+        "2019-2022": {
+          "S": {
+            "n": 64,
+            "censored": 6.25,
+            "stopped": 93.75,
+            "reach1R": 48.4375,
+            "reach2R": 31.25,
+            "reach3R": 26.5625,
+            "reach5R": 17.1875,
+            "median_maxR": 0.934799,
+            "stop_median": 1.457856,
+            "stop_mean": 1.586682,
+            "small": false
+          },
+          "B": {
+            "n": 1280,
+            "censored": 6.40625,
+            "stopped": 93.59375,
+            "reach1R": 53.125,
+            "reach2R": 36.328125,
+            "reach3R": 27.734375,
+            "reach5R": 17.96875,
+            "median_maxR": 1.107439,
+            "stop_median": 1.457856,
+            "stop_mean": 1.586682,
+            "small": false
+          },
+          "gap2R": -5.078125
+        },
+        "2023-2026": {
+          "S": {
+            "n": 35,
+            "censored": 11.428571,
+            "stopped": 88.571429,
+            "reach1R": 60.0,
+            "reach2R": 42.857143,
+            "reach3R": 34.285714,
+            "reach5R": 20.0,
+            "median_maxR": 1.408438,
+            "stop_median": 1.329792,
+            "stop_mean": 1.398677,
+            "small": false
+          },
+          "B": {
+            "n": 700,
+            "censored": 16.0,
+            "stopped": 84.0,
+            "reach1R": 58.285714,
+            "reach2R": 44.285714,
+            "reach3R": 36.142857,
+            "reach5R": 27.285714,
+            "median_maxR": 1.520759,
+            "stop_median": 1.329792,
+            "stop_mean": 1.398677,
+            "small": false
+          },
+          "gap2R": -1.428571
+        }
+      },
+      "yearly": {
+        "2019": {
+          "nS": 10,
+          "S": 30.0,
+          "nB": 200,
+          "B": 40.5
+        },
+        "2020": {
+          "nS": 21,
+          "S": 33.333333,
+          "nB": 420,
+          "B": 40.714286
+        },
+        "2021": {
+          "nS": 25,
+          "S": 36.0,
+          "nB": 500,
+          "B": 33.6
+        },
+        "2022": {
+          "nS": 8,
+          "S": 12.5,
+          "nB": 160,
+          "B": 28.125
+        },
+        "2023": {
+          "nS": 13,
+          "S": 61.538462,
+          "nB": 260,
+          "B": 46.923077
+        },
+        "2024": {
+          "nS": 13,
+          "S": 46.153846,
+          "nB": 260,
+          "B": 41.923077
+        },
+        "2025": {
+          "nS": 6,
+          "S": 16.666667,
+          "nB": 120,
+          "B": 36.666667
+        },
+        "2026": {
+          "nS": 3,
+          "S": 0.0,
+          "nB": 60,
+          "B": 58.333333
+        }
+      },
+      "gap1R": -2.424242,
+      "gap3R": -1.414141
+    }
+  },
+  "level_rates": {
+    "L0.000": {
+      "n": 87,
+      "censored": 3.448276,
+      "stopped": 96.551724,
+      "reach1R": 44.827586,
+      "reach2R": 36.781609,
+      "reach3R": 27.586207,
+      "reach5R": 14.942529,
+      "median_maxR": 0.789839,
+      "stop_median": 0.598205,
+      "stop_mean": 0.598205,
+      "small": false
+    },
+    "L0.146": {
+      "n": 95,
+      "censored": 6.315789,
+      "stopped": 93.684211,
+      "reach1R": 57.894737,
+      "reach2R": 36.842105,
+      "reach3R": 27.368421,
+      "reach5R": 20.0,
+      "median_maxR": 1.174932,
+      "stop_median": 1.07655,
+      "stop_mean": 1.155579,
+      "small": false
+    },
+    "L0.236": {
+      "n": 101,
+      "censored": 7.920792,
+      "stopped": 92.079208,
+      "reach1R": 52.475248,
+      "reach2R": 35.643564,
+      "reach3R": 29.70297,
+      "reach5R": 18.811881,
+      "median_maxR": 1.032634,
+      "stop_median": 1.402981,
+      "stop_mean": 1.529305,
+      "small": false
+    },
+    "L0.382": {
+      "n": 107,
+      "censored": 13.084112,
+      "stopped": 86.915888,
+      "reach1R": 46.728972,
+      "reach2R": 41.121495,
+      "reach3R": 31.775701,
+      "reach5R": 25.233645,
+      "median_maxR": 0.915293,
+      "stop_median": 1.927625,
+      "stop_mean": 2.151559,
+      "small": false
+    },
+    "L0.500": {
+      "n": 112,
+      "censored": 16.964286,
+      "stopped": 83.035714,
+      "reach1R": 51.785714,
+      "reach2R": 41.071429,
+      "reach3R": 32.142857,
+      "reach5R": 25.892857,
+      "median_maxR": 1.286015,
+      "stop_median": 2.430956,
+      "stop_mean": 2.800064,
+      "small": false
+    },
+    "L0.618": {
+      "n": 114,
+      "censored": 19.298246,
+      "stopped": 80.701754,
+      "reach1R": 49.122807,
+      "reach2R": 37.719298,
+      "reach3R": 31.578947,
+      "reach5R": 22.807018,
+      "median_maxR": 0.983063,
+      "stop_median": 3.170762,
+      "stop_mean": 3.438994,
+      "small": false
+    }
+  },
+  "judge": {
+    "R1": {
+      "conds": {
+        "gap>=8pp": false,
+        "ci_low_year>0": false,
+        "ci_low_month>0": false,
+        "period_sign_same": true,
+        "tail_trim_gap>0": false
+      },
+      "pass": false
+    },
+    "R2": {
+      "strategy2R": 35.643564,
+      "best_baseline2R": 38.655462,
+      "gap": -3.011898,
+      "pass": false,
+      "better": "R2b"
+    },
+    "R3": {
+      "rank_of_0.236": 6,
+      "ranking": [
+        [
+          "L0.382",
+          41.1,
+          107
+        ],
+        [
+          "L0.500",
+          41.1,
+          112
+        ],
+        [
+          "L0.618",
+          37.7,
+          114
+        ],
+        [
+          "L0.146",
+          36.8,
+          95
+        ],
+        [
+          "L0.000",
+          36.8,
+          87
+        ],
+        [
+          "L0.236",
+          35.6,
+          101
+        ]
+      ],
+      "random2R": 38.535645,
+      "random_upper95": 45.645161,
+      "random_n": 519,
+      "pass": false
+    }
+  },
+  "verdict": "FAIL",
+  "next": "진입에 방향 예측력 없음. 등급화·빈도 확장(I/J) 중단. 구조 재설계 또는 \"청산 전략\" 으로 재정의",
+  "invariants": {
+    "10_assert_invariants_A0": "PASS",
+    "10_assert_invariants_A1_A2": "PASS",
+    "5_6_7_outcome_rules_selftest": "PASS",
+    "1_atr_end_time<decision_time": "PASS (101 cands)",
+    "2_r_confirm_time<entry_time": "PASS",
+    "3_R_bar<entry_bar": "PASS",
+    "4_A1_subset_of_shadow": "PASS-WITH-EXCEPTION (81/82 일치, 예외 1건 전부 포지션 슬롯 점유로 설명)",
+    "9_seed_determinism": "PASS",
+    "5_first_scanned_bar>=entry_time": "PASS",
+    "8_baseline_entry_in_range_same_horizon": "PASS"
+  },
+  "supplement_V3": {
+    "n_candidates": 93,
+    "A2_match": 77,
+    "compare": {
+      "R1": {
+        "label": "V3 B-R1 시간매칭 무작위",
+        "S": {
+          "n": 93,
+          "censored": 8.602151,
+          "stopped": 91.397849,
+          "reach1R": 56.989247,
+          "reach2R": 39.784946,
+          "reach3R": 33.333333,
+          "reach5R": 21.505376,
+          "median_maxR": 1.270747,
+          "stop_median": 1.381677,
+          "stop_mean": 1.477897,
+          "small": false
+        },
+        "B": {
+          "n": 1860,
+          "censored": 10.376344,
+          "stopped": 89.623656,
+          "reach1R": 56.129032,
+          "reach2R": 41.397849,
+          "reach3R": 33.27957,
+          "reach5R": 23.494624,
+          "median_maxR": 1.263573,
+          "stop_median": 1.381677,
+          "stop_mean": 1.477897,
+          "small": false
+        },
+        "gap2R": -1.612903,
+        "boot_year": {
+          "gap": -1.612903,
+          "ci_low": -13.648649,
+          "ci_high": 6.061947,
+          "blocks": 7,
+          "skipped": 0,
+          "iters": 5000
+        },
+        "boot_month": {
+          "gap": -1.612903,
+          "ci_low": -10.777778,
+          "ci_high": 7.431193,
+          "blocks": 52,
+          "skipped": 0,
+          "iters": 5000
+        },
+        "tail": {
+          "S": {
+            "n": 88,
+            "censored": 3.409091,
+            "stopped": 96.590909,
+            "reach1R": 54.545455,
+            "reach2R": 36.363636,
+            "reach3R": 29.545455,
+            "reach5R": 17.045455,
+            "median_maxR": 1.213393,
+            "stop_median": 1.386055,
+            "stop_mean": 1.481506,
+            "small": false
+          },
+          "B": {
+            "n": 1767,
+            "censored": 5.65931,
+            "stopped": 94.34069,
+            "reach1R": 53.820034,
+            "reach2R": 38.313526,
+            "reach3R": 29.767968,
+            "reach5R": 19.468025,
+            "median_maxR": 1.155367,
+            "stop_median": 1.386055,
+            "stop_mean": 1.484701,
+            "small": false
+          },
+          "gap2R": -1.949889
+        },
+        "periods": {
+          "2019-2022": {
+            "S": {
+              "n": 58,
+              "censored": 6.896552,
+              "stopped": 93.103448,
+              "reach1R": 55.172414,
+              "reach2R": 39.655172,
+              "reach3R": 32.758621,
+              "reach5R": 22.413793,
+              "median_maxR": 1.213393,
+              "stop_median": 1.437591,
+              "stop_mean": 1.528424,
+              "small": false
+            },
+            "B": {
+              "n": 1160,
+              "censored": 6.637931,
+              "stopped": 93.362069,
+              "reach1R": 54.741379,
+              "reach2R": 39.396552,
+              "reach3R": 31.37931,
+              "reach5R": 21.465517,
+              "median_maxR": 1.16595,
+              "stop_median": 1.437591,
+              "stop_mean": 1.528424,
+              "small": false
+            },
+            "gap2R": 0.258621
+          },
+          "2023-2026": {
+            "S": {
+              "n": 35,
+              "censored": 11.428571,
+              "stopped": 88.571429,
+              "reach1R": 60.0,
+              "reach2R": 40.0,
+              "reach3R": 34.285714,
+              "reach5R": 20.0,
+              "median_maxR": 1.283588,
+              "stop_median": 1.33387,
+              "stop_mean": 1.394166,
+              "small": false
+            },
+            "B": {
+              "n": 700,
+              "censored": 16.571429,
+              "stopped": 83.428571,
+              "reach1R": 58.428571,
+              "reach2R": 44.714286,
+              "reach3R": 36.428571,
+              "reach5R": 26.857143,
+              "median_maxR": 1.524044,
+              "stop_median": 1.33387,
+              "stop_mean": 1.394166,
+              "small": false
+            },
+            "gap2R": -4.714286
+          }
+        },
+        "yearly": {
+          "2020": {
+            "nS": 21,
+            "S": 38.095238,
+            "nB": 420,
+            "B": 49.047619
+          },
+          "2021": {
+            "nS": 27,
+            "S": 44.444444,
+            "nB": 540,
+            "B": 34.259259
+          },
+          "2022": {
+            "nS": 10,
+            "S": 30.0,
+            "nB": 200,
+            "B": 33.0
+          },
+          "2023": {
+            "nS": 13,
+            "S": 53.846154,
+            "nB": 260,
+            "B": 47.307692
+          },
+          "2024": {
+            "nS": 13,
+            "S": 46.153846,
+            "nB": 260,
+            "B": 41.923077
+          },
+          "2025": {
+            "nS": 6,
+            "S": 16.666667,
+            "nB": 120,
+            "B": 36.666667
+          },
+          "2026": {
+            "nS": 3,
+            "S": 0.0,
+            "nB": 60,
+            "B": 61.666667
+          }
+        },
+        "gap1R": 0.860215,
+        "gap3R": 0.053763
+      },
+      "R2a": {
+        "label": "V3 B-R2a ARMED-only 구조손절",
+        "S": {
+          "n": 93,
+          "censored": 8.602151,
+          "stopped": 91.397849,
+          "reach1R": 56.989247,
+          "reach2R": 39.784946,
+          "reach3R": 33.333333,
+          "reach5R": 21.505376,
+          "median_maxR": 1.270747,
+          "stop_median": 1.381677,
+          "stop_mean": 1.477897,
+          "small": false
+        },
+        "B": {
+          "n": 101,
+          "censored": 33.663366,
+          "stopped": 66.336634,
+          "reach1R": 56.435644,
+          "reach2R": 32.673267,
+          "reach3R": 23.762376,
+          "reach5R": 14.851485,
+          "median_maxR": 1.145228,
+          "stop_median": 7.964992,
+          "stop_mean": 8.765926,
+          "small": false
+        },
+        "gap2R": 7.111679,
+        "boot_year": {
+          "gap": 7.111679,
+          "ci_low": -8.646617,
+          "ci_high": 19.382114,
+          "blocks": 7,
+          "skipped": 0,
+          "iters": 5000
+        },
+        "boot_month": {
+          "gap": 7.111679,
+          "ci_low": -5.251725,
+          "ci_high": 19.519928,
+          "blocks": 53,
+          "skipped": 0,
+          "iters": 5000
+        },
+        "tail": {
+          "S": {
+            "n": 88,
+            "censored": 3.409091,
+            "stopped": 96.590909,
+            "reach1R": 54.545455,
+            "reach2R": 36.363636,
+            "reach3R": 29.545455,
+            "reach5R": 17.045455,
+            "median_maxR": 1.213393,
+            "stop_median": 1.386055,
+            "stop_mean": 1.481506,
+            "small": false
+          },
+          "B": {
+            "n": 96,
+            "censored": 30.208333,
+            "stopped": 69.791667,
+            "reach1R": 54.166667,
+            "reach2R": 29.166667,
+            "reach3R": 19.791667,
+            "reach5R": 10.416667,
+            "median_maxR": 1.034133,
+            "stop_median": 8.197977,
+            "stop_mean": 8.896118,
+            "small": false
+          },
+          "gap2R": 7.19697
+        },
+        "periods": {
+          "2019-2022": {
+            "S": {
+              "n": 58,
+              "censored": 6.896552,
+              "stopped": 93.103448,
+              "reach1R": 55.172414,
+              "reach2R": 39.655172,
+              "reach3R": 32.758621,
+              "reach5R": 22.413793,
+              "median_maxR": 1.213393,
+              "stop_median": 1.437591,
+              "stop_mean": 1.528424,
+              "small": false
+            },
+            "B": {
+              "n": 64,
+              "censored": 29.6875,
+              "stopped": 70.3125,
+              "reach1R": 54.6875,
+              "reach2R": 37.5,
+              "reach3R": 26.5625,
+              "reach5R": 17.1875,
+              "median_maxR": 1.231054,
+              "stop_median": 7.650428,
+              "stop_mean": 8.670396,
+              "small": false
+            },
+            "gap2R": 2.155172
+          },
+          "2023-2026": {
+            "S": {
+              "n": 35,
+              "censored": 11.428571,
+              "stopped": 88.571429,
+              "reach1R": 60.0,
+              "reach2R": 40.0,
+              "reach3R": 34.285714,
+              "reach5R": 20.0,
+              "median_maxR": 1.283588,
+              "stop_median": 1.33387,
+              "stop_mean": 1.394166,
+              "small": false
+            },
+            "B": {
+              "n": 37,
+              "censored": 40.540541,
+              "stopped": 59.459459,
+              "reach1R": 59.459459,
+              "reach2R": 24.324324,
+              "reach3R": 18.918919,
+              "reach5R": 10.810811,
+              "median_maxR": 1.032726,
+              "stop_median": 8.414119,
+              "stop_mean": 8.931168,
+              "small": false
+            },
+            "gap2R": 15.675676
+          }
+        },
+        "yearly": {
+          "2020": {
+            "nS": 21,
+            "S": 38.095238,
+            "nB": 24,
+            "B": 58.333333
+          },
+          "2021": {
+            "nS": 27,
+            "S": 44.444444,
+            "nB": 30,
+            "B": 23.333333
+          },
+          "2022": {
+            "nS": 10,
+            "S": 30.0,
+            "nB": 10,
+            "B": 30.0
+          },
+          "2023": {
+            "nS": 13,
+            "S": 53.846154,
+            "nB": 14,
+            "B": 35.714286
+          },
+          "2024": {
+            "nS": 13,
+            "S": 46.153846,
+            "nB": 13,
+            "B": 23.076923
+          },
+          "2025": {
+            "nS": 6,
+            "S": 16.666667,
+            "nB": 6,
+            "B": 16.666667
+          },
+          "2026": {
+            "nS": 3,
+            "S": 0.0,
+            "nB": 4,
+            "B": 0.0
+          }
+        },
+        "gap1R": 0.553604,
+        "gap3R": 9.570957
+      },
+      "R2b": {
+        "label": "V3 B-R2b ARMED-only 손절폭 고정",
+        "S": {
+          "n": 93,
+          "censored": 8.602151,
+          "stopped": 91.397849,
+          "reach1R": 56.989247,
+          "reach2R": 39.784946,
+          "reach3R": 33.333333,
+          "reach5R": 21.505376,
+          "median_maxR": 1.270747,
+          "stop_median": 1.381677,
+          "stop_mean": 1.477897,
+          "small": false
+        },
+        "B": {
+          "n": 105,
+          "censored": 9.52381,
+          "stopped": 90.47619,
+          "reach1R": 53.333333,
+          "reach2R": 37.142857,
+          "reach3R": 24.761905,
+          "reach5R": 16.190476,
+          "median_maxR": 1.176035,
+          "stop_median": 1.381677,
+          "stop_mean": 1.381677,
+          "small": false
+        },
+        "gap2R": 2.642089,
+        "boot_year": {
+          "gap": 2.642089,
+          "ci_low": -8.613014,
+          "ci_high": 8.686371,
+          "blocks": 7,
+          "skipped": 0,
+          "iters": 5000
+        },
+        "boot_month": {
+          "gap": 2.642089,
+          "ci_low": -7.899921,
+          "ci_high": 13.747899,
+          "blocks": 53,
+          "skipped": 0,
+          "iters": 5000
+        },
+        "tail": {
+          "S": {
+            "n": 88,
+            "censored": 3.409091,
+            "stopped": 96.590909,
+            "reach1R": 54.545455,
+            "reach2R": 36.363636,
+            "reach3R": 29.545455,
+            "reach5R": 17.045455,
+            "median_maxR": 1.213393,
+            "stop_median": 1.386055,
+            "stop_mean": 1.481506,
+            "small": false
+          },
+          "B": {
+            "n": 100,
+            "censored": 5.0,
+            "stopped": 95.0,
+            "reach1R": 51.0,
+            "reach2R": 34.0,
+            "reach3R": 21.0,
+            "reach5R": 12.0,
+            "median_maxR": 1.134912,
+            "stop_median": 1.381677,
+            "stop_mean": 1.381677,
+            "small": false
+          },
+          "gap2R": 2.363636
+        },
+        "periods": {
+          "2019-2022": {
+            "S": {
+              "n": 58,
+              "censored": 6.896552,
+              "stopped": 93.103448,
+              "reach1R": 55.172414,
+              "reach2R": 39.655172,
+              "reach3R": 32.758621,
+              "reach5R": 22.413793,
+              "median_maxR": 1.213393,
+              "stop_median": 1.437591,
+              "stop_mean": 1.528424,
+              "small": false
+            },
+            "B": {
+              "n": 66,
+              "censored": 7.575758,
+              "stopped": 92.424242,
+              "reach1R": 53.030303,
+              "reach2R": 33.333333,
+              "reach3R": 22.727273,
+              "reach5R": 16.666667,
+              "median_maxR": 1.158155,
+              "stop_median": 1.381677,
+              "stop_mean": 1.381677,
+              "small": false
+            },
+            "gap2R": 6.321839
+          },
+          "2023-2026": {
+            "S": {
+              "n": 35,
+              "censored": 11.428571,
+              "stopped": 88.571429,
+              "reach1R": 60.0,
+              "reach2R": 40.0,
+              "reach3R": 34.285714,
+              "reach5R": 20.0,
+              "median_maxR": 1.283588,
+              "stop_median": 1.33387,
+              "stop_mean": 1.394166,
+              "small": false
+            },
+            "B": {
+              "n": 39,
+              "censored": 12.820513,
+              "stopped": 87.179487,
+              "reach1R": 53.846154,
+              "reach2R": 43.589744,
+              "reach3R": 28.205128,
+              "reach5R": 15.384615,
+              "median_maxR": 1.556873,
+              "stop_median": 1.381677,
+              "stop_mean": 1.381677,
+              "small": false
+            },
+            "gap2R": -3.589744
+          }
+        },
+        "yearly": {
+          "2020": {
+            "nS": 21,
+            "S": 38.095238,
+            "nB": 24,
+            "B": 37.5
+          },
+          "2021": {
+            "nS": 27,
+            "S": 44.444444,
+            "nB": 32,
+            "B": 31.25
+          },
+          "2022": {
+            "nS": 10,
+            "S": 30.0,
+            "nB": 10,
+            "B": 30.0
+          },
+          "2023": {
+            "nS": 13,
+            "S": 53.846154,
+            "nB": 14,
+            "B": 50.0
+          },
+          "2024": {
+            "nS": 13,
+            "S": 46.153846,
+            "nB": 15,
+            "B": 40.0
+          },
+          "2025": {
+            "nS": 6,
+            "S": 16.666667,
+            "nB": 6,
+            "B": 50.0
+          },
+          "2026": {
+            "nS": 3,
+            "S": 0.0,
+            "nB": 4,
+            "B": 25.0
+          }
+        },
+        "gap1R": 3.655914,
+        "gap3R": 8.571429
+      }
+    },
+    "level_rates": {
+      "L0.000": {
+        "n": 75,
+        "censored": 5.333333,
+        "stopped": 94.666667,
+        "reach1R": 48.0,
+        "reach2R": 38.666667,
+        "reach3R": 33.333333,
+        "reach5R": 22.666667,
+        "median_maxR": 0.887008,
+        "stop_median": 0.598205,
+        "stop_mean": 0.598205,
+        "small": false
+      },
+      "L0.146": {
+        "n": 87,
+        "censored": 6.896552,
+        "stopped": 93.103448,
+        "reach1R": 60.91954,
+        "reach2R": 42.528736,
+        "reach3R": 34.482759,
+        "reach5R": 24.137931,
+        "median_maxR": 1.565966,
+        "stop_median": 1.054608,
+        "stop_mean": 1.125725,
+        "small": false
+      },
+      "L0.236": {
+        "n": 93,
+        "censored": 8.602151,
+        "stopped": 91.397849,
+        "reach1R": 56.989247,
+        "reach2R": 39.784946,
+        "reach3R": 33.333333,
+        "reach5R": 21.505376,
+        "median_maxR": 1.270747,
+        "stop_median": 1.381677,
+        "stop_mean": 1.477897,
+        "small": false
+      },
+      "L0.382": {
+        "n": 95,
+        "censored": 13.684211,
+        "stopped": 86.315789,
+        "reach1R": 52.631579,
+        "reach2R": 43.157895,
+        "reach3R": 34.736842,
+        "reach5R": 27.368421,
+        "median_maxR": 1.077752,
+        "stop_median": 1.914925,
+        "stop_mean": 2.113427,
+        "small": false
+      },
+      "L0.500": {
+        "n": 100,
+        "censored": 17.0,
+        "stopped": 83.0,
+        "reach1R": 55.0,
+        "reach2R": 41.0,
+        "reach3R": 35.0,
+        "reach5R": 26.0,
+        "median_maxR": 1.355929,
+        "stop_median": 2.456498,
+        "stop_mean": 2.784163,
+        "small": false
+      },
+      "L0.618": {
+        "n": 101,
+        "censored": 19.80198,
+        "stopped": 80.19802,
+        "reach1R": 52.475248,
+        "reach2R": 40.594059,
+        "reach3R": 32.673267,
+        "reach5R": 22.772277,
+        "median_maxR": 1.030741,
+        "stop_median": 3.021966,
+        "stop_mean": 3.383554,
+        "small": false
+      }
+    }
+  }
+}
