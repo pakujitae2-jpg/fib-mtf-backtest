@@ -13,5 +13,5 @@ __pycache__/
 *.pyc
 *.log
 _*.py
-pos['tgts'][0][0]
+pos\['tgts'\]\[0\]\[0\]
 0)
