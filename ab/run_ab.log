@@ -1,0 +1,22 @@
+========================================================================================================================
+Test A/B — run_ab.py  2026-08-29 01:35:24 UTC
+========================================================================================================================
+[§1.2] 데이터 sha256 대조: ALL MATCH (7 files)
+
+[A0] 양방향 Corrected 회귀 확인 (판정 기준: exact)
+  V2 both: n=150 PF=1.40 ret=+96%  (기대 150 / 1.40 / +96) -> OK | assert_invariants PASS
+  V3 both: n=141 PF=1.10 ret=-16%  (기대 141 / 1.10 / -16) -> OK | assert_invariants PASS
+
+[A] 롱 전용 baseline (freeze config + SIDES=long)
+  A1 (V2 long): n=82 | 30%x10x PF 1.81 ret +253% MDD 56% MTM 66/67% | risk1% PF 2.16 ret +86% MDD 15% MTM 20/20% CAGR 8.6%
+      A0 롱 부분집합 대비: common 70, added 12 {'SKIP_V_REMOVED': 10, 'SLOT_FREED': 2}, removed 7 {'CASCADE_EARLIER_FILL_SAME_ARM': 6, 'OTHER': 1}, changed 0 {} | Σpm A0-long +800.6 -> A1 +793.9
+  A2 (V3 long): n=79 | 30%x10x PF 1.50 ret +108% MDD 40% MTM 47/47% | risk1% PF 1.71 ret +38% MDD 10% MTM 12/12% CAGR 5.0%
+      A0 롱 부분집합 대비: common 70, added 9 {'SLOT_FREED': 1, 'SKIP_V_REMOVED': 8}, removed 5 {'CASCADE_EARLIER_FILL_SAME_ARM': 5}, changed 0 {} | Σpm A0-long +495.7 -> A1 +380.6
+
+[shadow] 후보 생성 (V2 Spot, A1 config) + 하네스 검증
+  shadow 후보 101건 (ORDER_CREATE 209, FILL 101, R_INVALID 0, V 5, D_ARM 119) | 5분봉 결손 4H봉 후보 2
+  불변식 4: A1 체결 82건 중 shadow 일치 81, 예외 1
+     예외 L-2021-01-03 15:59-26 2021-01-03 16:45 entry 33072.94 R_t 4396 [KEY_MISSING] 슬롯 점유로 설명됨=True | 같은 ARM shadow 후보 [('0.236-31', '2020-12-31 12:55', 28480.64)]
+
+[B] baseline 생성 + 통계 (SEED=20260829, N_R1=20, horizon 60일, 부트스트랩 5000회)
+  생성 3.2s: 전략 101, R1 2020, R2a 115, R2b 119 (skip {'P0_stop_above_entry': 4}), R3 {'L0.000': 87, 'L0.146': 95, 'L0.236': 101, 'L0.382': 107, 'L0.500': 112, 'L0.618': 114, 'random': 519}

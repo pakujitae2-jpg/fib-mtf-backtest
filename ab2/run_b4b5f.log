@@ -1,0 +1,43 @@
+========================================================================================================================
+B4 / B5 / F′ — run_b4b5f.py
+========================================================================================================================
+  [inv 4_frozen_files_unmodified] PASS code+data sha256 = ab_freeze, git clean
+  [inv 2_shadow_n_101_93] PASS V2 101 / V3 93
+  [inv 1_BR1_reproduced] PASS 전략 +2R 35.6 R1 38.9 gap -3.2 (5차: 35.6 / 38.9 / -3.2)
+  A1 n=82 A2 n=79 | 시장 체류 V2 14.05% V3 11.93%
+
+[B4] 손절 없는 순방향 수익률 (짝지은 창 내 초과수익)
+  V2: FAIL (통과 지평 [], 약 []) | 30일 구간 겹침 비율 2.7%
+  V3: FAIL (통과 지평 [], 약 []) | 30일 구간 겹침 비율 2.9%
+  [inv 5_B4_close_bar_after_entry] PASS 위반 0
+  [inv 11_censoring_same_rule] PASS fwd_return() 단일 함수, 전략·baseline 동일 (censored 건수는 결과표)
+
+[B5] 손절폭 스윕 (S1~S6, 후보별 매칭 baseline seed 20260830)
+  V2: FAIL (통과 [], 약 []) | S1 gap(5차 추출) -3.2 / S1 gap(seed 20260830) -3.9 | S6 gap -7.7 (5차 B-R2a +1.7)
+  V3: FAIL (통과 [], 약 []) | S1 gap(5차 추출) -1.6 / S1 gap(seed 20260830) +0.3 | S6 gap -4.6 (5차 B-R2a +7.1)
+  [inv 6_B5_stop_below_entry] PASS skipped(stop>=entry): V2 {'S1': 0, 'S2': 0, 'S3': 0, 'S4': 0, 'S5': 0, 'S6': 2}, V3 {'S1': 0, 'S2': 0, 'S3': 0, 'S4': 0, 'S5': 0, 'S6': 2}
+  [inv 3_B5_S1_gap_reproduced] PASS V2 S1 vs 5차 R1 추출 gap -3.2
+
+[F′-0] 벤치마크 BH / BH-x / BH-EM (200회, seed 20260903)
+  [inv 9_cost_constants] PASS {'FEE_MAKER': 0.0002, 'FEE_TAKER': 0.0005, 'SLIP': 0.0005, 'MM': 0.005}
+  A1 (V2): 체류 14.05% 실효배율 0.70x | BH ret +1939% CAGR 49.5% MDD 77% | BH-x +534% CAGR 27.9% MDD 65% | BH-EM 중앙 ret +21% MDD 37% 체류 13.4%
+  A2 (V3): 체류 11.93% 실효배율 0.71x | BH ret +1002% CAGR 43.0% MDD 77% | BH-x +309% CAGR 23.4% MDD 64% | BH-EM 중앙 ret +12% MDD 33% 체류 11.3%
+
+[F′] 청산 기계 시뮬레이터 회귀 (실제 진입 -> 엔진 거래 재현)
+  [inv F_simulator_reproduces_V2] PASS 82/82 일치
+  [inv F_simulator_reproduces_V3] PASS 79/79 일치
+  A1 F′-1 200회 x3  diag taker {'skipped_no_valid_open': 600, 'blocked': 0, 'inv7_violations': 0, 'entry_premium_mean_pct': 0.7199538848581024, 'stop_pct_mean': 2.229810413665825} | 1b {'skipped_no_valid_open': 0, 'blocked': 366, 'inv7_violations': 0, 'entry_premium_mean_pct': 0.5920963114618496, 'stop_pct_mean': 1.5449517939007789} | 유효 구간 종료 사유 {'DISARM': 3, 'R_invalid': 37, 'R_replaced': 40, 'V': 2}
+  [inv 7_F1_entry_in_R_window_V2] PASS 위반 0
+  A1 F′-2 200회  diag {'blocked': 803, 'skipped': 0}
+  A2 F′-1 200회 x3  diag taker {'skipped_no_valid_open': 800, 'blocked': 620, 'inv7_violations': 0, 'entry_premium_mean_pct': 0.7917675086635408, 'stop_pct_mean': 2.2712410565720798} | 1b {'skipped_no_valid_open': 0, 'blocked': 138, 'inv7_violations': 0, 'entry_premium_mean_pct': 0.6331175037402114, 'stop_pct_mean': 1.5091870693151104} | 유효 구간 종료 사유 {'R_invalid': 29, 'R_replaced': 43, 'V': 4, 'DISARM': 3}
+  [inv 7_F1_entry_in_R_window_V3] PASS 위반 0
+  A2 F′-2 200회  diag {'blocked': 761, 'skipped': 0}
+  [inv 10_single_position_in_MC] PASS run_sequence: 겹치는 진입 skip, blocked 건수 = A1 F1 0 F2 803, A2 F1 620 F2 761
+  [inv 8_F2_confirmed_pivots_prev_week_only] PASS dexit/V 기준선 = replay_daily 의 확정 L 피벗(zz_low_any), W 목표 = data.prev_week (직전 완성 주)
+
+[종합 §0.2] B4 FAIL / B5 FAIL / F′-1 백분위 100
+  B4 FAIL → 개념 폐기. 피보나치 진입 계열 종료
+  F′-1 백분위 100 >= 95 → 진입이 +2R 지표로 안 잡히는 방식으로 기여. 지표 재설계
+  F′-0: 전략 risk1% CAGR 8.6% vs BH 49.5% / BH-x 27.9% / BH-EM 중앙 2.5% → 벤치마크 미달 → 전략 전체 재검토
+
+[§5] 불변식: 4_frozen_files_unmodified: PASS code+data sha256 = ab_freeze, git clean | 2_shadow_n_101_93: PASS V2 101 / V3 93 | 1_BR1_reproduced: PASS 전략 +2R 35.6 R1 38.9 gap -3.2 (5차: 35.6 / 38.9 / -3.2) | 5_B4_close_bar_after_entry: PASS 위반 0 | 11_censoring_same_rule: PASS fwd_return() 단일 함수, 전략·baseline 동일 (censored 건수는 결과표) | 6_B5_stop_below_entry: PASS skipped(stop>=entry): V2 {'S1': 0, 'S2': 0, 'S3': 0, 'S4': 0, 'S5': 0, 'S6': 2}, V3 {'S1': 0, 'S2': 0, 'S3': 0, 'S4': 0, 'S5': 0, 'S6': 2} | 3_B5_S1_gap_reproduced: PASS V2 S1 vs 5차 R1 추출 gap -3.2 | 9_cost_constants: PASS {'FEE_MAKER': 0.0002, 'FEE_TAKER': 0.0005, 'SLIP': 0.0005, 'MM': 0.005} | F_simulator_reproduces_V2: PASS 82/82 일치 | F_simulator_reproduces_V3: PASS 79/79 일치 | 7_F1_entry_in_R_window_V2: PASS 위반 0 | 7_F1_entry_in_R_window_V3: PASS 위반 0 | 10_single_position_in_MC: PASS run_sequence: 겹치는 진입 skip, blocked 건수 = A1 F1 0 F2 803, A2 F1 620 F2 761 | 8_F2_confirmed_pivots_prev_week_only: PASS dexit/V 기준선 = replay_daily 의 확정 L 피벗(zz_low_any), W 목표 = data.prev_week (직전 완성 주)
